@@ -1,6 +1,157 @@
-2024-12-16 02:27:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.12 with PID 3198 (/Users/huangnuan/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by huangnuan in /Users/huangnuan/Downloads/microservices-demo)
-2024-12-16 02:27:27 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
-2024-12-16 02:27:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.466 seconds (process running for 0.817)
-2024-12-16 02:27:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
-2024-12-16 02:27:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
-2024-12-16 02:27:28 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2024-12-19 03:50:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.12 with PID 43816 (/Users/huangnuan/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by huangnuan in /Users/huangnuan/Downloads/microservices-demo)
+2024-12-19 03:50:32 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-19 03:50:32 [main] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2024-12-19 03:50:32 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-12-19 03:50:32 [main] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.microservices.demo.twitter.to.kafka.service.TwitterToKafkaServiceApplication required a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.microservices.demo.twitter.to.kafka.service.runner.StreamRunner' in your configuration.
+
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.12 with PID 43920 (/Users/huangnuan/Downloads/microservices-demo/twitter-to-kafka-service/target/classes started by huangnuan in /Users/huangnuan/Downloads/microservices-demo)
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.453 seconds (process running for 0.745)
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - App starts...
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.TwitterToKafkaServiceApplication - Hello microservices!
+2024-12-19 03:53:48 [Twitter Stream consumer /  [1][initializing]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:48 [main] INFO  c.m.d.t.t.k.s.r.i.TwitterKafkaStreamRunner - Started filtering twitter stream for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 250 milliseconds
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Waiting for 250 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 500 milliseconds
+2024-12-19 03:53:49 [Twitter Stream consumer /  [1][Waiting for 500 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:50 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:50 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 1000 milliseconds
+2024-12-19 03:53:51 [Twitter Stream consumer /  [1][Waiting for 1000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 2000 milliseconds
+2024-12-19 03:53:53 [Twitter Stream consumer /  [1][Waiting for 2000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 4000 milliseconds
+2024-12-19 03:53:57 [Twitter Stream consumer /  [1][Waiting for 4000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:53:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:53:57 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 8000 milliseconds
+2024-12-19 03:54:05 [Twitter Stream consumer /  [1][Waiting for 8000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:54:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:54:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:54:21 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:54:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:54:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:54:37 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:54:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:54:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:54:53 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:54:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:54:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:55:09 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:55:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:55:10 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:55:26 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:55:26 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:55:26 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:55:42 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:55:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:55:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:55:58 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:55:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:55:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:56:14 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:56:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:56:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:56:30 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:56:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:56:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:56:46 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:56:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:56:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:57:02 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:57:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:57:03 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:57:19 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:57:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:57:19 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:57:35 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:57:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:57:35 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:57:51 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:57:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:57:51 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:58:07 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:58:07 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:58:07 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:58:23 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:58:23 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:58:23 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:58:39 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:58:40 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:58:40 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:58:56 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:58:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:58:56 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:59:12 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:59:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:59:12 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:59:28 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:59:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:59:28 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 03:59:44 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 03:59:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 03:59:44 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:00:00 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:00:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:00:00 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:00:16 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:00:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:00:16 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:00:32 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:00:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:00:32 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:00:48 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:00:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:00:49 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:01:05 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:01:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:01:05 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:01:21 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:01:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:01:21 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:01:37 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:01:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:01:37 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:01:53 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:01:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:01:53 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:02:09 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:02:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:02:09 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:02:25 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:02:25 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:02:25 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:02:41 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:02:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:02:42 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:02:58 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:02:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:02:58 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:03:14 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:03:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:03:14 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:03:30 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:03:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:03:30 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
+2024-12-19 04:03:46 [Twitter Stream consumer /  [1][Waiting for 16000 milliseconds]] INFO  twitter4j.TwitterStreamImpl - Establishing connection.
+2024-12-19 04:03:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - https://stream.twitter.com/1.1/statuses/filter.json
+2024-12-19 04:03:46 [Twitter Stream consumer /  [1][Establishing connection]] INFO  twitter4j.TwitterStreamImpl - Waiting for 16000 milliseconds
