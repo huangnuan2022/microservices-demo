@@ -41,6 +41,7 @@ build/
 
 # Exclude configuration files
 *.properties
+.env
 
 # Exclude binary files
 *.class
