@@ -31,3 +31,29 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Logs
+*.log
+/logs/
+
+# MacOS specific files
+.DS_Store
+
+# Exclude configuration files
+*.properties
+
+# Exclude binary files
+*.class
+
+# Ignore temporary files
+*.swp
+*.temp
+*.tmp
+*~
+
+# Exclude compiled libraries
+*.jar
+*.war
+*.ear
+
+
