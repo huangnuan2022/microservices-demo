@@ -1,0 +1,3 @@
+[submodule "config-server-repository"]
+	path = config-server-repository
+	url = https://github.com/huangnuan2022/microservices-demo-config.git

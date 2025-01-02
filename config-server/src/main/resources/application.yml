@@ -1,0 +1,33 @@
+server:
+  port: 8888
+
+logging:
+  level:
+    ROOT: INFO
+    org.spring.framework.cloud.config: DEBUG
+    #org.springframework.security: DEBUG
+
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/huangnuan2022/microservices-demo-config.git
+          default-label: main
+          username: huangnuan2022
+          password: ${GITHUB_TOKEN}
+          clone-on-start: true
+    fail-fast: true
+  security:
+    user:
+      name: spring_cloud_user
+      password: '{cipher}8cf9909e73d550126e1971c6ff25eb9e3ea12dab804e0848b2e2708b559f7fdc'
+
+log:
+  app-name: config-server
+
+encrypt:
+  key: ${ENCRYPT_KEY}
+
